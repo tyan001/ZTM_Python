@@ -190,11 +190,12 @@ def use_resource(should_fail):
         print("Acquiring resource")
         if should_fail:
             raise RuntimeError("Resource failed")
-        else:
-            print("Resource used successfully")
     except RuntimeError:
-        print("Error")
+        raise
     else:
+        print("Resource used successfully")
+        return "Success"
+    finally:
         print("Releasing resource")
 
 
