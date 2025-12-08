@@ -1,7 +1,7 @@
 # %%
 import utility
-import shopping.shopping_cart
-
+# import shopping.shopping_cart
+from shopping.shopping_util.shopping_util import buy
 # %%
 
 if __name__ == "__main__":
@@ -11,5 +11,7 @@ if __name__ == "__main__":
     print("Multiplication:", utility.multiply(4, 7))
     print("Division:", utility.divide(20, 4))
     
-    test = shopping.shopping_cart.buy("apple")
+    test = buy("apple")
     print("Shopping Cart:", test)
+    print(__name__)
+    print(utility.__name__)
