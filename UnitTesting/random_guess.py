@@ -19,5 +19,5 @@ if __name__ == "__main__":
             guess = int(input("guess a number from 1 - 10"))
             if run_guess(guess, answer):
                 break
-        except ValueError as err:
+        except ValueError:  
             print("please enter a numer")
