@@ -13,3 +13,4 @@ uv.lock
 
 # Local folders and files
 ztm-python-course-exercises/
+.env
