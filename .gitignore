@@ -10,6 +10,7 @@ uv.lock
 
 # Virtual environments
 .venv
+.vscode
 
 # Local folders and files
 ztm-python-course-exercises/
